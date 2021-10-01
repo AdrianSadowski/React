@@ -1,15 +1,17 @@
 import React from 'react';
 import styles from './Hero.scss';
 
-class Hero extends React.Component {
+
+const Hero = props =>  ({
   render() {
     return (
       <header className={styles.component}>
-        <h2 className={styles.title}>Thinks to do</h2>
-        <img class={styles.image} src="http://uploads.kodilla.com/bootcamp/fer/11.react/space.png"></img>
+        <h2 className={styles.title}>{props.titleText}</h2>
+        <img className={styles.image} src="http://uploads.kodilla.com/bootcamp/fer/11.react/space.png"></img>
       </header>
     )
   }
-}
+})
+
 
 export default Hero;
