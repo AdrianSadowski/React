@@ -4,7 +4,8 @@ import Card from "../Card/Card";
 import Creator from "../Creator/Creator";
 import Icon from "../Icon/Icon";
 import styles from './Column.scss';
-import ReactHtmlParser from 'react-html-parser';
+import PropTypes from 'prop-types'
+
 
 
 
@@ -12,7 +13,9 @@ import ReactHtmlParser from 'react-html-parser';
 class Column extends React.Component {
   state = {
     cards: this.props.cards || [],
-  };
+  }
+
+  
 
   addCard(title) {
     this.setState(state => (
@@ -31,13 +34,13 @@ class Column extends React.Component {
   }
 
   render() {
-    
 
     return (
+
       <section className={styles.component}>
         <h3 className={styles.title}>
           {this.props.title}
-          <span className={styles.icon}>{this.props.icon}</span>
+          <span className={styles.icon}><Icon name={this.props.icon} /></span>
         </h3>
         <div className={styles.cards}>
           {this.state.cards.map(({ key, ...cardProps }) => (
