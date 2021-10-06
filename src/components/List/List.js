@@ -7,6 +7,7 @@ import { settings } from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
 import Creator from '../Creator/Creator';
 
+
 class List extends React.Component {
   state = {
     columns: this.props.columns || [],

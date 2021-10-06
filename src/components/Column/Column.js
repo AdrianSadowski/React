@@ -1,22 +1,15 @@
 import React from "react";
-import { pageContents, settings } from "../../data/dataStore";
+import { settings } from "../../data/dataStore";
 import Card from "../Card/Card";
 import Creator from "../Creator/Creator";
 import Icon from "../Icon/Icon";
 import styles from './Column.scss';
-import PropTypes from 'prop-types'
-
-
-
 
 
 class Column extends React.Component {
   state = {
     cards: this.props.cards || [],
   }
-
-  
-
   addCard(title) {
     this.setState(state => (
       {
@@ -34,9 +27,7 @@ class Column extends React.Component {
   }
 
   render() {
-
     return (
-
       <section className={styles.component}>
         <h3 className={styles.title}>
           {this.props.title}
@@ -51,7 +42,6 @@ class Column extends React.Component {
           <Creator text={settings.cardCreatorText} action={title => this.addCard(title)}/>
         </div>
       </section>
-  
     )
   }
 }
