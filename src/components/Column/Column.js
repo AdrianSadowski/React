@@ -1,8 +1,9 @@
-import React from "react";
-import { settings } from "../../data/dataStore";
-import Card from "../Card/Card";
-import Creator from "../Creator/Creator";
-import Icon from "../Icon/Icon";
+import PropTypes from 'prop-types';
+import React from 'react';
+import { settings } from '../../data/dataStore';
+import Card from '../Card/Card';
+import Creator from '../Creator/Creator';
+import Icon from '../Icon/Icon';
 import styles from './Column.scss';
 
 
@@ -20,8 +21,8 @@ class Column extends React.Component {
             title,
             icon: 'list-alt',
             
-          }
-        ]
+          },
+        ],
       }
     ));
   }
@@ -42,8 +43,13 @@ class Column extends React.Component {
           <Creator text={settings.cardCreatorText} action={title => this.addCard(title)}/>
         </div>
       </section>
-    )
+    );
   }
 }
+Column.propTypes = {
+  title: PropTypes.node,
+  icon: PropTypes.string,
+  cards: PropTypes.array,
+};
 
 export default Column;
