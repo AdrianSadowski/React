@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-//import { settings } from '../../data/dataStore';
 import Card from '../Card/Card';
 // import Creator from '../Creator/Creator';
 import Icon from '../Icon/Icon';
@@ -8,25 +7,6 @@ import styles from './Column.scss';
 
 
 class Column extends React.Component {
-  // [DELETE] state = {
-  //   cards: this.props.cards || [],
-  // }
-  // addCard(title) {
-  //   this.setState(state => (
-  //     {
-  //       cards: [
-  //         ...state.cards,
-  //         {
-  //           key: state.cards.length ? state.cards[state.cards.length - 1].key + 1 : 0,
-  //           title,
-  //           icon: 'list-alt',
-            
-  //         },
-  //       ],
-  //     }
-  //   ));
-  // }
-
   render() {
     const {title, icon, cards} = this.props;
     

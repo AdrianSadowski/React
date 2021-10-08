@@ -9,29 +9,9 @@ import ReactHtmlParser from 'react-html-parser';
 
 
 class List extends React.Component {
-  // [DELETE] state = {
-  //   columns: this.props.columns || [],
-  // }
-
-
-  // [DELETE] addColumn(title) {
-  //   this.setState(state => (
-  //     {
-  //       columns: [
-  //         ...state.columns,
-  //         {
-  //           key: state.columns.length ? state.columns[state.columns.length - 1].key + 1 : 0,
-  //           title,
-  //           icon: 'list-alt',
-  //           cards: [],
-  //         },
-  //       ],
-  //     }
-  //   ));
-  // }
-
   render() {
     const {title, image, description, columns} = this.props;
+    
     return (
       <section className={styles.component}>
         <Hero titleText={title} image={image} />
@@ -49,7 +29,6 @@ class List extends React.Component {
       </section>
     );
   }
-
   static propTypes = {
     title: PropTypes.node.isRequired,
     description: PropTypes.node,
@@ -60,6 +39,5 @@ class List extends React.Component {
     description: settings.defaultListDescription,
   }
 }
-
 
 export default List;

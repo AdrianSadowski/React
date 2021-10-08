@@ -4,11 +4,7 @@ import styles from './App.scss';
 import PropTypes from 'prop-types';
 
 
-//[usun]import {pageContents, listData} from '../../data/dataStore';
-
-
 class App extends React.Component {
-
   render() {
     const { title, subtitle, lists } = this.props;
 
@@ -27,7 +23,6 @@ class App extends React.Component {
     subtitle: PropTypes.node,
     lists: PropTypes.array,
   }
-
 }
 
 export default App;
