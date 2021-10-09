@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { settings } from '../../data/dataStore';
 import Card from '../Card/Card';
 // import Creator from '../Creator/Creator';
 import Icon from '../Icon/Icon';
@@ -32,6 +33,9 @@ class Column extends React.Component {
     icon: PropTypes.string,
     cards: PropTypes.array,
   };
+  static defaultProps = {
+    icon: settings.defaultColumnIcon,
+  }
 }
 
 export default Column;
