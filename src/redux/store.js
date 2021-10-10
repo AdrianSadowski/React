@@ -2,7 +2,7 @@ import {combineReducers, createStore} from 'redux';
 import initialStoreData from '../data/dataStore';
 import columnsReducer from './columnsRedux';
 import cardsReducer from './cardsRedux';
-import searchStringRedux from './searchStringRedux';
+import searchStringReducer from './searchStringRedux';
 
 
 
@@ -19,7 +19,7 @@ const initialState = {
 const reducers = {
   columns: columnsReducer,
   cards: cardsReducer,
-  searchStringRedux: searchStringRedux,
+  searchString: searchStringReducer,
 };
 
 // add blank reducers for initial state properties without reducers
