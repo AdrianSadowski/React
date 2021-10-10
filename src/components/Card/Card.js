@@ -4,10 +4,6 @@ import PropTypes from 'prop-types';
 
 
 class Card extends React.Component {
-  static propTypes = {
-    title: PropTypes.string,
-  }
-
   render() {
     const {title} = this.props;
     return (
@@ -15,6 +11,10 @@ class Card extends React.Component {
         <h4>{title}</h4>
       </section>
     );
+  }
+
+  static propTypes = {
+    title: PropTypes.string,
   }
 }
 export default Card;

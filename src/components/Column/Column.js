@@ -6,7 +6,7 @@ import Creator from '../Creator/Creator';
 import Icon from '../Icon/Icon';
 import styles from './Column.scss';
 
-// zaginione cards ???????
+
 class Column extends React.Component {
   render() {
     const {title, icon, cards, addCard} = this.props;
