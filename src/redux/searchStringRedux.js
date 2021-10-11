@@ -11,7 +11,7 @@ const createActionName = name => `app/${reducerName}/${name}`;
 export const ADD_SEARCHSTRING = createActionName('ADD_SEARCHSTRING');
 
 // action creators
-export const createActionChangeString = SearchString => ({ payload: SearchString, type: ADD_SEARCHSTRING });
+export const createActionChangeString = searchString => ({ payload: searchString, type: ADD_SEARCHSTRING });
 
 // reducer
 export default function reducer(statePart = '', action = {}) {

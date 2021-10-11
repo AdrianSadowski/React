@@ -7,7 +7,7 @@ import Search from '../Search/Search';
 
 class App extends React.Component {
   render() {
-    const { title, subtitle, lists } = this.props;
+    const { title, subtitle, lists} = this.props;
 
     return (
       <main className={styles.component}>
@@ -24,6 +24,7 @@ class App extends React.Component {
     title: PropTypes.node,
     subtitle: PropTypes.node,
     lists: PropTypes.array,
+    searchString: PropTypes.string,
   }
 }
 
