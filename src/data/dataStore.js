@@ -84,6 +84,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'LIST 2 <sup>soon!</sup>',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-3',
+    title: 'LIST 3  <sup>soon!</sup>',
+    description: 'Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
 ];
 
 const columns = [
