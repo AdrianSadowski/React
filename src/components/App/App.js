@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import MainLayout from '../MainLayout/MainLayout';
 import Faq from '../Faq/Faq';
 import List from '../List/ListContainer';
+import SearchResultContainer from '../SearchResult/SearchResultContainer';
 
 const App = () => (
   <BrowserRouter>
@@ -14,6 +15,7 @@ const App = () => (
         <Route exact path='/info' component={Info} />
         <Route exact path='/faq' component={Faq} />
         <Route exatc path="/list/:id" component={List} />
+        <Route exatc path="/search/:id" component={SearchResultContainer} />
       </Switch>
     </MainLayout>
   </BrowserRouter>
